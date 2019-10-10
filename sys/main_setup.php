@@ -48,7 +48,7 @@ require_once($adoc_path . "/sys/user_functions.php");
 session_start();
 
 if(isset($_SESSION["canae_adoc_lu"]) && is_object($_SESSION["canae_adoc_lu"])) {
-	$lu = $_SESSION["canae_adoc_lu"];
+	$loggedInUser = $_SESSION["canae_adoc_lu"];
 }
 
 ?>
