@@ -6,27 +6,32 @@
  * @package canae-adoc-light
  */
 
-/* Enable error display */
-
+/**
+ * Enable error display
+ */
 ini_set('display_errors', 'On');
 error_reporting(E_ALL);
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
-/* Set timezone */
-
+/**
+ * Set timezone
+ */
 date_default_timezone_set("Europe/Madrid");
 setlocale(LC_ALL,"es_ES");
 
-/* Database configuration */
-
+/**
+ * Database configuration
+ */
 $adoc_db_host = "";
 $adoc_db_user = "";
 $adoc_db_password = "";
 $adoc_db_name = "";
 
-/* Globals */
-
+/**
+ * Initialize lobals
+ */
 $adoc_pagetitle = null;
+$adoc_appname = "Adoc";
 $adoc_url = "https://"; /* Do not add trailing slash */
 $adoc_path = "C:\"; /* Do not add trailing slash */
 $adoc_errors = array();
@@ -37,14 +42,16 @@ if ($adoc_db->connect_error) {
 	trigger_error('Database connection failed: '  . $dbs->connect_error, E_USER_ERROR);
 }
 
-/* Require additional functions and classes */
-
+/**
+ * Require additional functions and classes
+ */
 require_once($adoc_path . "/sys/main_functions.php");
 require_once($adoc_path . "/sys/user_classes.php");
 require_once($adoc_path . "/sys/user_functions.php");
 
-/* Session */
-
+/**
+ * PHP session
+ */
 session_start();
 
 if(isset($_SESSION["canae_adoc_lu"]) && is_object($_SESSION["canae_adoc_lu"])) {
