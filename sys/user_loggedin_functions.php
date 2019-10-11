@@ -1,6 +1,7 @@
 <?php
+
 /**
- * Canae Adoc Light user classes file
+ * Canae Adoc Light logged in user functions file
  *
  * @package canae-adoc-light
  */
