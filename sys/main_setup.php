@@ -26,6 +26,7 @@ $adoc_db_host = "";
 $adoc_db_user = "";
 $adoc_db_password = "";
 $adoc_db_name = "";
+$adoc_db_prefix = "adoc_";
 
 /**
  * Initialize lobals
