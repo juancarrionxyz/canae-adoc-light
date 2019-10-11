@@ -8,7 +8,7 @@
 
 require_once("./sys/main_setup.php");
 
-if (uLogged()) {
+if (User::isLoggedIn()) {
 	header("Location: " . $adoc_url);
 	die();
 }
@@ -18,10 +18,10 @@ if (! empty($_POST)) {
 	$form_email = $_POST["form_email"];
 	$form_password = $_POST["form_password"];
 
-	if (! userEmailExists($form_email)) {
+	if (! User::mailExists($form_email)) {
 		$adoc_errors[] = "La dirección de correo electrónico introducida no existe.";
 	} else {
-		$user_data = userGetData(userIdByEmail($form_email));
+		$user_data = User::getData(User::idByEmail($form_email));
 		
 		$hashed_password = generateHash($form_password, $user_data["user_password"]);
 		
