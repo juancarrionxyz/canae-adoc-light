@@ -1,1 +1,168 @@
+*, html, body, header,footer, section, aside, div, ul, li, a, p, h1, h2, h3, h4, span, table, tr, td {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "Ubuntu", "Helvetica", Arial, sans-serif;
+	border-collapse: collapse;
+}
 
+.adoc-avatar {
+	width: 48px;
+	height: 48px;
+	border-radius: 24px;
+}
+
+.adoc-layout .mdl-layout__header .mdl-layout__drawer-button {
+	color: rgba(0, 0, 0, 0.54);
+}
+
+.mdl-layout__drawer .avatar {
+	margin-bottom: 16px;
+}
+
+.adoc-app-title {
+    display: block;
+    font-size: 1.5em;
+    padding: 16px;
+}
+
+.adoc-drawer {
+	border: none;
+}
+
+.adoc-header {
+	background-color: #fff;
+}
+
+.adoc-drawer .mdl-menu .mdl-menu__item {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.adoc-drawer-header {
+	box-sizing: border-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-justify-content: flex-end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	padding: 16px;
+	height: 151px;
+}
+
+.adoc-avatar-dropdown {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	position: relative;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 100%;
+}
+
+.adoc-navigation {
+	-webkit-flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+}
+
+.adoc-layout .adoc-navigation .mdl-navigation__link {
+	display: -webkit-flex !important;
+	display: -ms-flexbox !important;
+	display: flex !important;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	color: rgba(255, 255, 255, 0.56);
+	font-weight: 500;
+}
+
+.adoc-layout .adoc-navigation .mdl-navigation__link:hover {
+	background-color: #00BCD4;
+	color: #37474F;
+}
+
+.adoc-navigation .mdl-navigation__link .material-icons {
+	font-size: 24px;
+	color: rgba(255, 255, 255, 0.56);
+	margin-right: 32px;
+}
+
+.adoc-content, .adoc-result-block {
+	max-width: 1080px;
+}
+
+.mdl-card__supporting-text {
+    width: 100%;
+}
+
+.mdl-data-table {
+    width: 100%;
+    margin-top: 16px;
+}
+
+.mdl-data-table td, .mdl-data-table th {
+    vertical-align: middle;
+    height: auto;
+    position: static;
+    white-space: initial;
+    padding: 12px 18px;
+    width: auto;
+    text-overflow: initial;
+}
+
+.adoc-form__actions {
+	text-align: right;
+	margin-top: 16px;
+}
+
+.mdl-card__supporting-text p, .mdl-card__supporting-text img, .mdl-card__supporting-text h3 {
+	margin: 16px 0;
+}
+
+.adoc-navigation hr {
+    border-color: rgba(255, 255, 255, .15);
+    border-width: 1px;
+}
+
+.adoc-data-table-container {
+	overflow-x: auto;
+}
+
+.document-list-mime svg, .document-list-mime span {
+	vertical-align: middle;
+	margin-right: 8px;
+}
+
+.adoc-footer-text {
+    padding: 16px;
+    text-align: center;
+    opacity: .4;
+}
+
+.adoc-footer-text img {
+    display: block;
+}
+
+.adoc-footer-text a, .adoc-footer-text i {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 4px;
+}
