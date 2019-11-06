@@ -6,12 +6,12 @@
  * @package canae-adoc-light
  */
 
-require_once("./sys/main_setup.php");
+require_once("./sys/main.php");
 
-if (uLogged()) {
-	$loggedInUser->logout();
-}
+App::requireLogged();
 
-header("Location: " . $adoc_url);
+User::logout();
+
+header("Location: " . App::getUrl());
 
 ?>
