@@ -11,8 +11,6 @@
 		<!-- Meta -->
 		<meta charset="utf-8">
 		<title><?php echo App::getHtmlTitle(); ?></title>
-		<!-- <meta name="description" content=""> -->
-		<!-- <meta name="author" content=""> -->
 		
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1">
 		<meta name="theme-color" content="#551a8b">
@@ -35,14 +33,6 @@
 				<div class="mdl-layout__header-row">
 					<span class="mdl-layout-title"><?php echo App::getPageTitle(); ?></span>
 					<div class="mdl-layout-spacer"></div>
-					<!--button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
-						<i class="material-icons">more_vert</i>
-					</button>
-					<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
-						<li class="mdl-menu__item">About</li>
-						<li class="mdl-menu__item">Contact</li>
-						<li class="mdl-menu__item">Legal information</li>
-					</ul-->
 				</div>
 			</header>
 			<?php if (User::isLoggedIn()) { ?>
