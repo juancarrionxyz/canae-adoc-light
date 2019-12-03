@@ -7,7 +7,7 @@
  */
 
 /**
- * Enable error display
+ * Enable error display for debugging
  */
 ini_set('display_errors', 'On');
 error_reporting(E_ALL);
@@ -23,18 +23,18 @@ setlocale(LC_ALL,"es_ES");
  * Database configuration
  */
 $adoc_db_host = "localhost";
-$adoc_db_user = "inventario";
-$adoc_db_password = "DL4GZDmMwLtRfeBUby95kkpBJFTwUmUbrSmdK9zw";
-$adoc_db_name = "canae_adoc_light";
-$adoc_db_prefix = "adoc_";
+$adoc_db_user = "";
+$adoc_db_password = "";
+$adoc_db_name = "";
+$adoc_db_prefix = "";
 
 /**
  * Initialize lobals
  */
 $adoc_page_title = null;
-$adoc_app_title = "Canae Adoc Light";
-$adoc_app_url = "https://adoc.asambleacanae.es"; /* Do not add trailing slash */
-$adoc_app_path = "C:\inetpub\wwwroot\adoc.asambleacanae.es"; /* Do not add trailing slash */
+$adoc_app_title = "";
+$adoc_app_url = ""; /* Do not add trailing slash */
+$adoc_app_path = ""; /* Do not add trailing slash */
 $adoc_dir_separator = "\\";
 $adoc_app_upload_dir = "upl"; /* Do not add trailing slash */
 $adoc_errors = array();
